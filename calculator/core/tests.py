@@ -12,6 +12,12 @@ class CoreViewsTest(TestCase):
         response = client.get('/')
         self.assertEquals(response.status_code, 200)
 
+class CalcViewsTest(TestCase):
+    def test_view_cal_online(self):
+        client = Client()
+        response = client.get('/calc')
+        self.assertEquals(response.status_code, 301) # pois realiza o redirecionamento para a pagina home
+
 #=== MODELS ===
 class CalculationModelTest(TestCase):
     @classmethod

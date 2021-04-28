@@ -22,8 +22,8 @@
     </header>
     <main>
         <div class="box-calculator">
-            <form id="calculator" class="calculator" action="calc">
-                <input id="visor" class="calculator-item visor" type="text" value="" readonly>
+            <form id="calculator" class="calculator" action="calc/" method="GET">
+                <input id="visor" name="visor" class="calculator-item visor" type="text" value="" readonly>
                 <button id="btn-clear" type="button" class="clear" onclick="clearVisor();">C</button>
                 <button id="btn-left-parentese" type="button" onclick="addNumberVisor('(');">(</button>
                 <button id="btn-right-parentese"type="button" onclick="addNumberVisor(')');">)</button>
@@ -47,9 +47,11 @@
         </div>
         <div id="historic">
             <h2>Calculation History:</h2>
+            {% for calculation in calculations %}
             <div class="box-historic-calculation">
-                2 + 2 = 4
+                {{calculation}}
             </div>
+            {% endfor %}
         </div>
     </main>
     <footer>

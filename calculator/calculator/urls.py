@@ -19,5 +19,6 @@ from core import views as core_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', core_views.page_calculator)
+    path('', core_views.page_calculator),
+    path('calc/', core_views.calc)
 ]
