@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+
+    <!-- CSS HERE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/calculator.css">
+</head>
+<body>
+    <header>
+        <nav id="main-menu">
+            <ul>
+                <li class="logo"><i class="fa fa-calculator"></i> CALCULADORA</li>
+                <li id="link-github"><a href="https://github.com/WandersonGomes/NUPREDS"><i class="fa fa-github fa-1g"></i> GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box-calculator">
+            <form id="calculator" class="calculator" action="calc">
+                <input id="visor" class="calculator-item visor" type="text" value="" readonly>
+                <button id="btn-clear" type="button" class="clear" onclick="clearVisor();">C</button>
+                <button id="btn-left-parentese" type="button" onclick="addNumberVisor('(');">(</button>
+                <button id="btn-right-parentese"type="button" onclick="addNumberVisor(')');">)</button>
+                <button id="btn-division" type="button" onclick="addNumberVisor('/');">/</button>
+                <button id="btn-seven" type="button" onclick="addNumberVisor('7');">7</button>
+                <button id="btn-eight" type="button" onclick="addNumberVisor('8');">8</button>
+                <button id="btn-nine" type="button" onclick="addNumberVisor('9');">9</button>
+                <button id="btn-multiplication" type="button" onclick="addNumberVisor('*');">*</button>
+                <button id="btn-four" type="button" onclick="addNumberVisor('4');">4</button>
+                <button id="btn-five" type="button" onclick="addNumberVisor('5');">5</button>
+                <button id="btn-six" type="button" onclick="addNumberVisor('6');">6</button>
+                <button id="btn-subtraction" type="button" onclick="addNumberVisor('-');">-</button>
+                <button id="btn-one" type="button" onclick="addNumberVisor('1');">1</button>
+                <button id="btn-two" type="button" onclick="addNumberVisor('2');">2</button>
+                <button id="btn-three" type="button" onclick="addNumberVisor('3');">3</button>
+                <button id="btn-sum" type="button" onclick="addNumberVisor('+');">+</button>
+                <button id="btn-zero" type="button" onclick="addNumberVisor('0');">0</button>
+                <button id="btn-point" type="button" onclick="addNumberVisor('.');">.</button>
+                <button id="btn-equal" type="submit" class="equal"> = </button>
+            </form>
+        </div>
+        <div id="historic">
+            <h2>Calculation History:</h2>
+        </div>
+    </main>
+    <footer>
+        Desenvolvido por: Wanderson Gomes
+    </footer>
+
+    <!-- JAVASCRIPT HERE-->
+    <script type="text/javascript" src="./js/calculator.js"></script>
+</body>
+</html>
