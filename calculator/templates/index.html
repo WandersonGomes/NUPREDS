@@ -25,8 +25,8 @@
             <form id="calculator" class="calculator" action="calc/" method="GET">
                 <input id="visor" name="visor" class="calculator-item visor" type="text" value="" readonly>
                 <button id="btn-clear" type="button" class="clear" onclick="clearVisor();">C</button>
-                <button id="btn-left-parentese" type="button" onclick="addNumberVisor('(');">(</button>
-                <button id="btn-right-parentese"type="button" onclick="addNumberVisor(')');">)</button>
+                <button id="btn-parentese-left" type="button" onclick="addNumberVisor('(');">(</button>
+                <button id="btn-parentese-right"type="button" onclick="addNumberVisor(')');">)</button>
                 <button id="btn-division" type="button" onclick="addNumberVisor('/');">/</button>
                 <button id="btn-seven" type="button" onclick="addNumberVisor('7');">7</button>
                 <button id="btn-eight" type="button" onclick="addNumberVisor('8');">8</button>
@@ -42,7 +42,7 @@
                 <button id="btn-sum" type="button" onclick="addNumberVisor('+');">+</button>
                 <button id="btn-zero" type="button" onclick="addNumberVisor('0');">0</button>
                 <button id="btn-point" type="button" onclick="addNumberVisor('.');">.</button>
-                <button id="btn-equal" type="submit" class="equal"> = </button>
+                <button id="btn-equals" type="submit" class="equal"> = </button>
             </form>
         </div>
         <div id="historic">
