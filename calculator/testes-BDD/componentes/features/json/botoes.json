@@ -1,0 +1,23 @@
+{
+    "botoes_calculadora" : [
+        {"id": "btn-clear", "label": "C"},
+        {"id": "btn-parentese-left", "label": "("},
+        {"id": "btn-parentese-right", "label": ")"},
+        {"id": "btn-division", "label": "/"},
+        {"id": "btn-seven", "label": "7"},
+        {"id": "btn-eight", "label": "8"},
+        {"id": "btn-nine", "label": "9"},
+        {"id": "btn-multiplication", "label": "*"},
+        {"id": "btn-four", "label": "4"},
+        {"id": "btn-five", "label": "5"},
+        {"id": "btn-six", "label": "6"},
+        {"id": "btn-subtraction", "label": "-"},
+        {"id": "btn-one", "label": "1"},
+        {"id": "btn-two", "label": "2"},
+        {"id": "btn-three", "label": "3"},
+        {"id": "btn-sum", "label": "+"},
+        {"id": "btn-zero", "label": "0"},
+        {"id": "btn-point", "label": "."},
+        {"id": "btn-equals", "label": "="}
+    ]
+}
