@@ -20,3 +20,7 @@ def calc(request):
         Calculation.objects.create(expression=expression, result=result)
 
     return redirect("/")
+
+def clear_historic(request):
+    Calculation.objects.all().delete()
+    return redirect("/")

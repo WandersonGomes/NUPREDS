@@ -43,3 +43,8 @@ def procurando_caixa_historico(context, id):
 def verificando_h2_historic_box(context, texto):
     cabecalho_h2 = context.box_historic.find_element_by_tag_name("h2")
     assert (cabecalho_h2.text == texto) == True
+
+@then('ela tera um botao com id "{id}" com o seguinte texto "{texto}"')
+def verifando_se_o_botao_limpa_historico_disponivel(context, id, texto):
+    botao= context.navegador.find_element_by_id(id)
+    assert bool(botao) == True 

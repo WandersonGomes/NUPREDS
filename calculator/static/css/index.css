@@ -127,3 +127,12 @@ footer {
     padding: 5px;
     border: 1px solid black;
 }
+
+.box-button-clear-historic {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.box-button-clear-historic a:hover {
+    background-color: #4cc42a;
+}

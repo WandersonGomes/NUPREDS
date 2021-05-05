@@ -14,3 +14,8 @@ Feature: verificando os componentes visiveis na tela da calculadora
         When eu estiver na pagina
         Then ela tera uma caixa contendo o historico de operacoes feita pela calculadora com o id "historic"
         And a caixa do historico tera um cabecalho h2 com o texto "Calculation History:"
+
+    Scenario: verificando se o botao de limpar historico esta disponivel
+        Given eu acesse a pagina da calculadora
+        When eu estiver na pagina
+        Then ela tera um botao com id "btn-clear-historico" com o seguinte texto "Clear Historic"
